@@ -18,43 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-El-qeD">
-                                <rect key="frame" x="12" y="40" width="577" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0HF-8q-eAF">
+                                <rect key="frame" x="12" y="83" width="576" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0HF-8q-eAF">
-                                <rect key="frame" x="12" y="91" width="576" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwn-yc-32K">
-                                <rect key="frame" x="15" y="137" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwn-yc-32K">
+                                <rect key="frame" x="15" y="121" width="34" height="30"/>
                                 <state key="normal" title="Load"/>
                                 <connections>
                                     <action selector="loadBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rwq-K1-5Or"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMo-Au-QJw">
-                                <rect key="frame" x="550" y="134" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMo-Au-QJw">
+                                <rect key="frame" x="550" y="118" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cND-wF-cDz"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Username and click load. available password filled " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-El-qeD">
+                                <rect key="frame" x="12" y="40" width="577" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QMo-Au-QJw" firstAttribute="top" secondItem="0HF-8q-eAF" secondAttribute="bottom" constant="13" id="5r5-wG-xYp"/>
-                            <constraint firstItem="d5J-El-qeD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="7pl-Uu-b7W"/>
-                            <constraint firstItem="Rwn-yc-32K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="Fmx-BL-ZQR"/>
-                            <constraint firstItem="d5J-El-qeD" firstAttribute="leading" secondItem="0HF-8q-eAF" secondAttribute="leading" id="HB1-lA-e5p"/>
-                            <constraint firstItem="d5J-El-qeD" firstAttribute="centerX" secondItem="0HF-8q-eAF" secondAttribute="centerX" id="KTr-Ud-baA"/>
-                            <constraint firstItem="0HF-8q-eAF" firstAttribute="top" secondItem="d5J-El-qeD" secondAttribute="bottom" constant="21" id="Nmp-L3-mm8"/>
-                            <constraint firstItem="d5J-El-qeD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJS-da-l9j"/>
-                            <constraint firstItem="d5J-El-qeD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="iJi-Bc-RoZ"/>
-                            <constraint firstItem="Rwn-yc-32K" firstAttribute="top" secondItem="0HF-8q-eAF" secondAttribute="bottom" constant="16" id="p2T-aK-jka"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QMo-Au-QJw" secondAttribute="trailing" constant="-4" id="pHB-p4-9IG"/>
+                            <constraint firstItem="d5J-El-qeD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="3oV-uv-8gc"/>
+                            <constraint firstItem="d5J-El-qeD" firstAttribute="leading" secondItem="0HF-8q-eAF" secondAttribute="leading" id="3xw-GS-C9v"/>
+                            <constraint firstItem="d5J-El-qeD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="MTa-DF-KNL"/>
+                            <constraint firstItem="Rwn-yc-32K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="QK4-DT-6b1"/>
+                            <constraint firstItem="Rwn-yc-32K" firstAttribute="top" secondItem="0HF-8q-eAF" secondAttribute="bottom" constant="16" id="UUa-ad-UhK"/>
+                            <constraint firstItem="d5J-El-qeD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WIc-lv-M3X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QMo-Au-QJw" secondAttribute="trailing" constant="-4" id="Zjo-2n-R5a"/>
+                            <constraint firstItem="QMo-Au-QJw" firstAttribute="top" secondItem="0HF-8q-eAF" secondAttribute="bottom" constant="13" id="uay-0t-e3n"/>
+                            <constraint firstItem="0HF-8q-eAF" firstAttribute="top" secondItem="d5J-El-qeD" secondAttribute="bottom" constant="21" id="ytc-nS-wJb"/>
+                            <constraint firstItem="d5J-El-qeD" firstAttribute="centerX" secondItem="0HF-8q-eAF" secondAttribute="centerX" id="zjj-Zu-VTI"/>
                         </constraints>
                     </view>
                     <connections>

@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         
         let request = NSFetchRequest(entityName: "Users")
         request.returnsObjectsAsFaults = false
+        
+        // filter on results
+        request.predicate = NSPredicate(format: "username = %@", userNam.text!)
+        
         var results:NSArray = []
         do{
              results = try context.executeFetchRequest(request)
@@ -43,6 +47,13 @@ class ViewController: UIViewController {
         
         if results.count > 0 {
             print(results)
+            
+            let res = results[0] as! NSManagedObject
+            
+            userNam.text = res.valueForKey("username") as? String
+            
+            password.text = res.valueForKey("password") as? String
+            
         }else{
             print("Error while reading data")
         }
@@ -58,8 +69,8 @@ class ViewController: UIViewController {
         
         let newUser = NSEntityDescription.insertNewObjectForEntityForName("Users", inManagedObjectContext: context)
         
-        newUser.setValue("Test Username", forKey: "username")
-        newUser.setValue("Test Password", forKey: "password")
+        newUser.setValue(userNam.text, forKey: "username")
+        newUser.setValue(password.text, forKey: "password")
         
         do{
             try context.save();
@@ -69,6 +80,8 @@ class ViewController: UIViewController {
         }
         
         print(newUser)
+          userNam.text = ""
+          password.text = ""
     }
 }
 
